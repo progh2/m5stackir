@@ -1,4 +1,8 @@
 #include <M5Stack.h>
+#include <IRremote.h>
+
+int RECV_PIN = 36; 
+IRrecv irrecv(RECV_PIN); 
 
 void setup() {
   M5.begin();
@@ -8,6 +12,7 @@ void setup() {
   M5.Lcd.println("IR Code Reader");
   M5.Lcd.setCursor(0,40);
   M5.Lcd.println("Ready...");
+  irrecv.enableIRIn(); 
 }
 
 void loop() {
