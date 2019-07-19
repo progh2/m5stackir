@@ -3,6 +3,7 @@
 
 int RECV_PIN = 36; 
 IRrecv irrecv(RECV_PIN); 
+decode_results results; 
 
 void setup() {
   M5.begin();
@@ -16,6 +17,11 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  if (irrecv.decode(&results)) {  
+    M5.Lcd.fillRect(0,40,200,30, GREEN);
+    M5.Lcd.setCursor(0,40);
+    M5.Lcd.println(results.value, HEX);
+    irrecv.resume(); 
+  }
+  delay(100);   
 }
