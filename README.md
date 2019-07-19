@@ -8,9 +8,7 @@
 - IR Unit의 적외선 수신 값을 가져오는 법
 
 ## 준비물
-- M5Go Kit  [[구매]()]  [[상세정보](https://docs.m5stack.com/#/en/core/m5go)]
-또는
-- M5Stack Core [[구매]()]  [[상세정보](https://docs.m5stack.com/#/en/core/m5go)] 와 IR Unit  [[구매]()]  [[상세정보](https://docs.m5stack.com/#/en/unit/ir)]
+- M5Go Kit  [[구매](http://shop.wiznet.co.kr/front/contents/product/view.asp?cateid=98&pid=1354)]  [[상세정보](https://docs.m5stack.com/#/en/core/m5go)]
 
 ## 레퍼런스
 - [M5Core Quick Start 가이드]()
