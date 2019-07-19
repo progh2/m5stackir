@@ -2,6 +2,8 @@
 
 void setup() {
   M5.begin();
+  M5.Lcd.println("IR Code Reader");
+  M5.Lcd.println("Ready...");
 }
 
 void loop() {
