@@ -1,6 +1,7 @@
-void setup() {
-  // put your setup code here, to run once:
+#include <M5Stack.h>
 
+void setup() {
+  M5.begin();
 }
 
 void loop() {
